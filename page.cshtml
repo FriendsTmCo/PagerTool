@@ -1,0 +1,8 @@
+<div class="parentPaging">
+
+    @for (int i = 0; i < ViewBag.pageCount; i++)
+    {
+        int count = i + 1;
+        <a asp-action="Index" asp-route-id="@i" class="pager">@count</a>
+    }
+</div>
